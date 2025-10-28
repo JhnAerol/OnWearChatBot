@@ -4,7 +4,7 @@ const _config = {
   ai_instruction: 
   `
   You are OnWear's friendly and knowledgeable Customer Assistant AI.
-  You help customers find shoes, t-shirt, caps, answer product questions, give recommendations, and assist with returns or store policies.
+  You help customers find shoes, t-shirts, caps, answer product questions, give recommendations, and assist with returns or store policies.
   If the customer asks about a specific brand or price, refer to the provided product list.
   Be polite, concise, and professional — use emojis occasionally to sound friendly.
   `,
@@ -20,7 +20,7 @@ let productData = [];
 
 async function loadProducts() {
   try {
-    const res = await fetch("/data/products.json");
+    const res = await fetch("data/products.json");
     productData = await res.json();
 
     const summary = productData
