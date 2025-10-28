@@ -58,7 +58,7 @@ function createMessageElement(text, isBot = false) {
   const avatar = document.createElement('div');
   avatar.className = `avatar ${isBot ? 'bot-avatar' : 'user-avatar'}`;
   const img = document.createElement('img');
-  img.src = isBot ? '/images/bot.png' : '/images/user.png';
+  img.src = isBot ? 'images/bot.png' : 'images/user.png';
   img.width = 25;
   avatar.appendChild(img);
   
@@ -91,7 +91,7 @@ function addMessage(text, isBot = false) {
   const avatar = document.createElement('div');
   avatar.className = `avatar ${isBot ? 'bot-avatar' : 'user-avatar'}`;
   const avatarImg = document.createElement('img');
-  avatarImg.src = isBot ? '/images/bot.png' : '/images/user.png';
+  avatarImg.src = isBot ? 'images/bot.png' : 'images/user.png';
   avatarImg.width = 25;
   avatar.appendChild(avatarImg);
   
@@ -145,7 +145,7 @@ function showTypingIndicator() {
   div.id = 'typing-indicator';
   div.className = 'message bot-message';
   div.innerHTML = `
-    <div class="avatar bot-avatar"><img src="/images/bot.png" width="25"></div>
+    <div class="avatar bot-avatar"><img src="images/bot.png" width="25"></div>
     <div class="message-content-wrapper">
       <div class="message-bubble bot-bubble"><p>...</p></div>
     </div>
